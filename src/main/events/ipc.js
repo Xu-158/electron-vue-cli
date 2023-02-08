@@ -8,6 +8,11 @@ export default {
     const getWindow = (name) => appManager.windows[name].win;
     const mainWindow = getWindow("main");
 
+    _ipcMain.on("hello", async (event, arg) => {
+      console.log("hellohellohellohello");
+      mainWindow.webContents.send("replyHello", "hellohellohellohello");
+    });
+
     _ipcMain.on("open-window", (e, name = "", data = null, options = {}) => {
       let subWindow = appManager.windows[name];
       if (!subWindow) {

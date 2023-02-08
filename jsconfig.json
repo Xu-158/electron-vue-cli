@@ -7,5 +7,5 @@
     }
   },
   "exclude": ["node_modules", "dist", "dist_electron"],
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "node.js"]
 }

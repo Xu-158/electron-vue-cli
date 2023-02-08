@@ -1,0 +1,21 @@
+$minHeight: 600px;
+$minWidth: 700px;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+@media screen and (max-height: $minHeight) {
+  html {
+    height: $minHeight;
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: $minWidth) {
+  html {
+    width: $minWidth;
+    overflow: scroll;
+  }
+}

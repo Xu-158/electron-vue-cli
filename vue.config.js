@@ -52,7 +52,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        "@": resolve("src/renderer"),
+        "@": resolve("src"),
       },
     },
   },
